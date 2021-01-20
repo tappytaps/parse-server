@@ -1219,6 +1219,8 @@ export class PostgresStorageAdapter implements StorageAdapter {
     object: any,
     transactionalSession: ?any
   ) {
+    console.log(`DDDD: ${className}, ${object}`);
+    console.dir(object);
     debug('createObject', className, object);
     let columnsArray = [];
     const valuesArray = [];
